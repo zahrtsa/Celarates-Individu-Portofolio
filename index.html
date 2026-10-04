@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zahra Tsabitah — Portfolio</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-[#050505] text-white antialiased">
+
+  <!-- NAVBAR  -->
+  <header
+    class="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-[#050505]/80 backdrop-blur-xl transition-opacity duration-300"
+  >
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="h-20 flex items-center justify-between">
+
+        <!-- Logo -->
+        <a
+          href="#home"
+          class="text-xl font-semibold tracking-tight hover:text-red-500 transition"
+        >
+          Zahra<span class="text-red-500">.</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="#home" class="nav-link text-sm text-neutral-400 hover:text-white transition">
+            Home
+          </a>
+
+          <a href="#about" class="nav-link text-sm text-neutral-400 hover:text-white transition">
+            About
+          </a>
+
+          <a href="#skills" class="nav-link text-sm text-neutral-400 hover:text-white transition">
+            Skills
+          </a>
+
+          <a href="#projects" class="nav-link text-sm text-neutral-400 hover:text-white transition">
+            Projects
+          </a>
+
+          <a href="#experience" class="nav-link text-sm text-neutral-400 hover:text-white transition">
+            Experience
+          </a>
+        </nav>
+
+        <!-- CTA -->
+        <a
+          href="#contact"
+          class="hidden md:inline-flex items-center px-5 py-2.5 rounded-full bg-red-600 text-white text-sm font-medium hover:bg-red-500 transition shadow-lg shadow-red-600/10"
+        >
+          Let's Talk
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="menu-button"
+          class="md:hidden text-neutral-300 hover:text-white"
+          aria-label="Open menu"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div
+        id="mobile-menu"
+        class="mobile-menu md:hidden border-t border-white/5"
+      >
+        <nav class="py-5 flex flex-col gap-4">
+          <a href="#home" class="mobile-link text-neutral-400 hover:text-white transition">
+            Home
+          </a>
+
+          <a href="#about" class="mobile-link text-neutral-400 hover:text-white transition">
+            About
+          </a>
+
+          <a href="#skills" class="mobile-link text-neutral-400 hover:text-white transition">
+            Skills
+          </a>
+
+          <a href="#projects" class="mobile-link text-neutral-400 hover:text-white transition">
+            Projects
+          </a>
+
+          <a href="#experience" class="mobile-link text-neutral-400 hover:text-white transition">
+            Experience
+          </a>
+
+          <a href="#contact" class="mobile-link text-red-500 font-medium">
+            Let's Talk
+          </a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- HERO  -->
+  <main id="home">
+
+    <section class="relative min-h-screen overflow-hidden">
+
+      <!-- Background Glow -->
+      <div
+        class="absolute top-24 right-[-120px] w-[420px] h-[420px] rounded-full bg-red-600/10 blur-[130px] pointer-events-none"
+      ></div>
+
+      <div
+        class="absolute bottom-[-150px] left-[-120px] w-[400px] h-[400px] rounded-full bg-red-600/5 blur-[120px] pointer-events-none"
+      ></div>
+
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 pt-32 pb-20 min-h-screen flex items-center">
+
+        <div class="grid lg:grid-cols-[1.15fr_0.85fr] gap-16 lg:gap-20 items-center w-full">
+
+          <!-- Hero Text -->
+          <div class="relative">
+
+            <div class="flex items-center gap-3 mb-7">
+              <span class="w-10 h-px bg-red-500"></span>
+              <span class="text-xs uppercase tracking-[0.25em] text-neutral-500">
+                Informatics Engineering Student
+              </span>
+            </div>
+
+            <h1
+              class="text-6xl sm:text-7xl lg:text-8xl font-semibold tracking-[-0.05em] leading-[0.9]"
+            >
+              Zahra<br>
+              <span class="text-red-500">Tsabitah.</span>
+            </h1>
+
+            <p class="mt-8 max-w-xl text-lg leading-relaxed text-neutral-400">
+              I build things while learning more about
+              <span class="text-white">web development</span>,
+              <span class="text-red-400">cybersecurity</span>,
+              and technology.
+            </p>
+
+            <!-- CTA -->
+            <div class="mt-9 flex flex-wrap items-center gap-4">
+
+              <a
+                href="#projects"
+                class="inline-flex items-center gap-3 px-6 py-3.5 rounded-full bg-red-600 text-white font-medium hover:bg-red-500 transition shadow-lg shadow-red-600/10"
+              >
+                View Projects
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/>
+                </svg>
+              </a>
+
+              <a
+                href="#about"
+                class="inline-flex items-center px-6 py-3.5 rounded-full border border-white/10 bg-white/[0.02] text-neutral-300 hover:text-white hover:border-white/20 transition backdrop-blur-md"
+              >
+                More About Me
+              </a>
+
+            </div>
+
+            <!-- Info Strip -->
+            <div class="mt-14 grid sm:grid-cols-3 gap-6 max-w-2xl">
+
+              <div class="relative">
+                <p class="text-xs uppercase tracking-widest text-neutral-600 mb-2">
+                  Based in
+                </p>
+                <p class="text-sm text-neutral-300">
+                  Jakarta
+                </p>
+              </div>
+
+              <div class="relative sm:border-l sm:border-red-500/30 sm:pl-6">
+                <p class="text-xs uppercase tracking-widest text-neutral-600 mb-2">
+                  Focus
+                </p>
+                <p class="text-sm text-red-400">
+                  Cybersecurity & Web
+                </p>
+              </div>
+
+              <div class="relative sm:border-l sm:border-red-500/30 sm:pl-6">
+                <p class="text-xs uppercase tracking-widest text-neutral-600 mb-2">
+                  Currently
+                </p>
+                <p class="text-sm text-neutral-300">
+                  Learning & Building
+                </p>
+              </div>
+
+            </div>
+
+            <!-- Decorative Number -->
+            <span class="hero-number">
+              01
+            </span>
+
+          </div>
+
+
+          <!-- Profile Image -->
+          <div class="relative flex justify-center lg:justify-end">
+
+            <div
+              class="profile-frame relative w-full max-w-[390px] aspect-[4/5] rounded-[2.5rem] overflow-hidden border border-white/10 bg-neutral-900 red-glow"
+            >
+
+              <img
+                src="assets/images/profile.jpeg"
+                alt="Zahra Tsabitah"
+                class="w-full h-full object-cover"
+              >
+
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+
+            </div>
+
+            <!-- Floating Badge -->
+            <div
+              class="absolute -bottom-5 -left-3 sm:left-0 lg:-left-12 px-5 py-4 rounded-2xl border border-white/10 bg-[#0b0b0b]/85 backdrop-blur-xl"
+            >
+              <div class="flex items-center gap-3">
+
+                <span class="w-2.5 h-2.5 rounded-full bg-red-500 pulse-red"></span>
+
+                <div>
+                  <p class="text-xs text-neutral-500">
+                    Status
+                  </p>
+
+                  <p class="text-sm text-white">
+                    Open to opportunities
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="py-28 lg:py-36 border-t border-white/5">
+
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+        <div class="grid lg:grid-cols-[0.35fr_1fr] gap-12 lg:gap-20">
+
+          <!-- Label -->
+          <div>
+            <div class="flex items-center gap-3">
+              <span class="text-red-500 text-sm font-medium">
+                02
+              </span>
+
+              <span class="w-8 h-px bg-red-500"></span>
+
+              <span class="text-xs uppercase tracking-[0.2em] text-neutral-500">
+                About Me
+              </span>
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div>
+
+            <h2
+              class="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-[-0.04em] leading-tight max-w-4xl"
+            >
+              Learning technology,
+              <span class="text-neutral-500">
+                one project at a time.
+              </span>
+            </h2>
+
+            <div class="mt-10 grid md:grid-cols-2 gap-8 text-neutral-400 leading-relaxed">
+
+              <p>
+                I'm an Informatics Engineering student who enjoys exploring
+                technology through hands-on projects, from building web
+                applications to learning about networks and cybersecurity.
+              </p>
+
+              <p>
+                I'm currently developing my skills through academic projects,
+                teaching experiences, competitions, and independent learning.
+                My main interest is growing toward cybersecurity and network
+                security.
+              </p>
+
+            </div>
+
+            <!-- Tags -->
+            <div class="mt-10 flex flex-wrap gap-3">
+
+              <span class="skill-tag">
+                Cybersecurity
+              </span>
+
+              <span class="skill-tag">
+                Web Development
+              </span>
+
+              <span class="skill-tag">
+                Network
+              </span>
+
+              <span class="skill-tag">
+                Programming
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="py-28 lg:py-36 bg-[#080808] border-y border-white/5">
+
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+        <div class="flex items-end justify-between gap-8 mb-14">
+
+          <div>
+
+            <div class="flex items-center gap-3 mb-5">
+              <span class="text-red-500 text-sm font-medium">
+                03
+              </span>
+
+              <span class="w-8 h-px bg-red-500"></span>
+
+              <span class="text-xs uppercase tracking-[0.2em] text-neutral-500">
+                Skills
+              </span>
+            </div>
+
+            <h2
+              class="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-[-0.04em]"
+            >
+              What I work with<span class="text-red-500">.</span>
+            </h2>
+
+          </div>
+
+        </div>
+
+
+        <!-- Skill Cards -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+
+          <!-- Programming -->
+          <div class="skill-card">
+
+            <span class="skill-number">
+              01
+            </span>
+
+            <h3 class="text-xl font-medium text-white">
+              Programming
+            </h3>
+
+            <p class="mt-4 text-sm text-neutral-500 leading-relaxed">
+              Building logic and solving problems using different
+              programming languages.
+            </p>
+
+            <div class="mt-7 flex flex-wrap gap-2">
+
+              <span class="tech-pill">
+                Java
+              </span>
+
+              <span class="tech-pill">
+                Python
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <!-- Web -->
+          <div class="skill-card">
+
+            <span class="skill-number">
+              02
+            </span>
+
+            <h3 class="text-xl font-medium text-white">
+              Web Development
+            </h3>
+
+            <p class="mt-4 text-sm text-neutral-500 leading-relaxed">
+              Developing responsive web interfaces and applications
+              using modern frameworks.
+            </p>
+
+            <div class="mt-7 flex flex-wrap gap-2">
+
+              <span class="tech-pill">
+                HTML
+              </span>
+
+              <span class="tech-pill">
+                CSS
+              </span>
+
+              <span class="tech-pill">
+                PHP
+              </span>
+
+              <span class="tech-pill">
+                Laravel
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <!-- Database -->
+          <div class="skill-card">
+
+            <span class="skill-number">
+              03
+            </span>
+
+            <h3 class="text-xl font-medium text-white">
+              Database
+            </h3>
+
+            <p class="mt-4 text-sm text-neutral-500 leading-relaxed">
+              Working with relational databases and organizing
+              application data.
+            </p>
+
+            <div class="mt-7 flex flex-wrap gap-2">
+
+              <span class="tech-pill">
+                MySQL
+              </span>
+
+              <span class="tech-pill">
+                Supabase
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <!-- Tools -->
+          <div class="skill-card">
+
+            <span class="skill-number">
+              04
+            </span>
+
+            <h3 class="text-xl font-medium text-white">
+              Tools
+            </h3>
+
+            <p class="mt-4 text-sm text-neutral-500 leading-relaxed">
+              Tools and platforms used for development, design,
+              collaboration, and learning.
+            </p>
+
+            <div class="mt-7 flex flex-wrap gap-2">
+
+              <span class="tech-pill">
+                Git
+              </span>
+
+              <span class="tech-pill">
+                GitHub
+              </span>
+
+              <span class="tech-pill">
+                Canva
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-28 lg:py-36">
+
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+        <div class="mb-14">
+
+          <div class="flex items-center gap-3 mb-5">
+            <span class="text-red-500 text-sm font-medium">
+              04
+            </span>
+
+            <span class="w-8 h-px bg-red-500"></span>
+
+            <span class="text-xs uppercase tracking-[0.2em] text-neutral-500">
+              Projects
+            </span>
+          </div>
+
+          <h2
+            class="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-[-0.04em]"
+          >
+            Things I've
+            <span class="text-red-500">
+              built.
+            </span>
+          </h2>
+
+          <p class="mt-5 text-neutral-500 max-w-xl">
+            A selection of academic, personal, and technical projects
+            I've worked on while learning and experimenting.
+          </p>
+
+        </div>
+
+        <!-- Projects generated by JavaScript -->
+        <div
+          id="project-list"
+          class="grid md:grid-cols-2 gap-5"
+        ></div>
+
+      </div>
+    </section>
+
+
+    <!-- EXPERIENCE  -->
+    <section
+      id="experience"
+      class="py-28 lg:py-36 bg-[#080808] border-y border-white/5"
+    >
+
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+        <div class="grid lg:grid-cols-[0.35fr_1fr] gap-12 lg:gap-20">
+
+          <!-- Label -->
+          <div>
+
+            <div class="flex items-center gap-3">
+              <span class="text-red-500 text-sm font-medium">
+                05
+              </span>
+
+              <span class="w-8 h-px bg-red-500"></span>
+
+              <span class="text-xs uppercase tracking-[0.2em] text-neutral-500">
+                Experience
+              </span>
+            </div>
+
+          </div>
+
+
+          <!-- Timeline -->
+          <div class="space-y-12">
+
+            <!-- Experience 1 -->
+            <div class="timeline-item">
+
+              <div class="timeline-dot"></div>
+
+              <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3">
+
+                <div>
+
+                  <p class="text-xs uppercase tracking-[0.2em] text-red-400">
+                    Teaching Assistant
+                  </p>
+
+                  <h3 class="mt-2 text-2xl font-medium text-white">
+                    Universitas Pancasila
+                  </h3>
+
+                  <p class="mt-3 text-neutral-500 leading-relaxed max-w-xl">
+                    Assisting practical sessions and supporting students
+                    in programming, database, and algorithm courses.
+                  </p>
+
+                </div>
+
+                <span class="text-sm text-neutral-600 whitespace-nowrap">
+                  Academic
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <!-- Experience 2 -->
+            <div class="timeline-item">
+
+              <div class="timeline-dot"></div>
+
+              <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3">
+
+                <div>
+
+                  <p class="text-xs uppercase tracking-[0.2em] text-red-400">
+                    Web Development Intern
+                  </p>
+
+                  <h3 class="mt-2 text-2xl font-medium text-white">
+                    Practical Experience
+                  </h3>
+
+                  <p class="mt-3 text-neutral-500 leading-relaxed max-w-xl">
+                    Worked on web development tasks including CRUD
+                    functionality and translating interface designs
+                    into application features.
+                  </p>
+
+                </div>
+
+                <span class="text-sm text-neutral-600 whitespace-nowrap">
+                  Internship
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <!-- Experience 3 -->
+            <div class="timeline-item">
+
+              <div class="timeline-dot"></div>
+
+              <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3">
+
+                <div>
+
+                  <p class="text-xs uppercase tracking-[0.2em] text-red-400">
+                    Academic Projects & Competitions
+                  </p>
+
+                  <h3 class="mt-2 text-2xl font-medium text-white">
+                    Learning by Building
+                  </h3>
+
+                  <p class="mt-3 text-neutral-500 leading-relaxed max-w-xl">
+                    Exploring different areas of technology through
+                    academic projects, competitions, and personal
+                    experiments.
+                  </p>
+
+                </div>
+
+                <span class="text-sm text-neutral-600 whitespace-nowrap">
+                  Ongoing
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!--  CONTACT -->
+    <section id="contact" class="py-28 lg:py-36">
+
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+        <div
+          class="contact-box relative overflow-hidden rounded-[2rem] border border-white/10 bg-[#0b0b0b] p-8 sm:p-12 lg:p-16"
+        >
+
+          <!-- Red Top Line -->
+          <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-red-500 to-transparent"></div>
+
+          <div class="max-w-3xl">
+
+            <div class="flex items-center gap-3 mb-6">
+
+              <span class="text-red-500 text-sm font-medium">
+                06
+              </span>
+
+              <span class="w-8 h-px bg-red-500"></span>
+
+              <span class="text-xs uppercase tracking-[0.2em] text-neutral-500">
+                Contact
+              </span>
+
+            </div>
+
+            <h2
+              class="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-[-0.05em]"
+            >
+              Let's build
+              <span class="text-red-500">
+                something.
+              </span>
+            </h2>
+
+            <p class="mt-7 text-neutral-500 text-lg leading-relaxed max-w-xl">
+              Interested in collaborating, discussing opportunities,
+              or simply connecting? Feel free to reach out.
+            </p>
+
+
+            <!-- Email -->
+            <a
+              href="mailto:ev.tsabitah@gmail.com"
+              class="contact-email inline-flex items-center gap-3 mt-9 text-lg text-white border-b border-red-500 pb-2 hover:text-red-400 transition"
+            >
+              ev.tsabitah@gmail.com
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 text-red-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/>
+              </svg>
+            </a>
+
+
+            <!-- Social Links -->
+            <div class="mt-12 flex flex-wrap gap-3">
+
+              <a
+                href="https://linkedin.com/in/zahratsabitah/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+              >
+                LinkedIn
+
+                <span class="text-neutral-600 group-hover:text-red-500 transition">
+                  ↗
+                </span>
+              </a>
+
+              <a
+                href="#"
+                class="social-link"
+              >
+                GitHub
+
+                <span class="text-neutral-600 group-hover:text-red-500 transition">
+                  ↗
+                </span>
+              </a>
+
+              <a
+                href="mailto:your.email@example.com"
+                class="social-link"
+              >
+                Email
+
+                <span class="text-neutral-600 group-hover:text-red-500 transition">
+                  ↗
+                </span>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER  -->
+  <footer class="border-t border-white/5">
+
+    <div
+      class="max-w-7xl mx-auto px-6 lg:px-10 py-8 flex flex-col sm:flex-row items-center justify-between gap-4"
+    >
+
+      <p class="text-sm text-neutral-600">
+        © 2026 Zahra Tsabitah.
+      </p>
+
+      <p class="text-sm text-neutral-700">
+        Built with HTML, Tailwind CSS & JavaScript.
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>
+
